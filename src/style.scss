@@ -1,0 +1,243 @@
+.App {
+  font-family: 'Didact Gothic', sans-serif;
+
+  .parallax-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    .header {
+      height: 70%;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+
+      background-image: linear-gradient(transparent, rgba(20, 20, 20, 0.74) 70%);
+      color: rgb(255, 204, 62);
+
+      padding-right: 5rem;
+
+
+      div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding-bottom: 3rem;
+
+        h1 {
+          padding: 0;
+          margin: 0;
+          font-weight: 800;
+          font-size: 90px;
+        }
+
+        p {
+          padding: 0;
+          margin: 0;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    // background: rgb(226, 226, 226);
+    background-image: linear-gradient(rgba(216, 148, 47, 0.459), rgb(236, 236, 236) 100%);
+    color: rgb(82, 82, 82);
+
+    padding: 0;
+    margin: 0;
+
+    height: 60vh;
+
+    h3 {
+
+      border-bottom: 1px rgb(116, 116, 116) solid;
+      width: 40%;
+      padding: 2rem;
+      margin: 0;
+      letter-spacing: 0.2rem;
+    }
+
+    .cards-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding-top: 3rem;
+
+      div {
+        height: 30vh;
+        width: 30vh;
+        background: rgb(253, 253, 253);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.75rem;
+      }
+    }
+
+
+  }
+
+  .search-fields {
+    background: rgb(236, 236, 236);
+    padding: 5rem;
+    padding-top: 2rem;
+
+    input {
+      font-size: 1.5rem;
+      height: 4rem;
+    }
+
+    .input-field label {
+      color: rgb(105, 105, 105);
+      font-size: 1.5rem;
+    }
+    .input-field input[type=text]:focus + label {
+      color: rgb(161, 161, 161);
+    }
+
+    .input-field input[type=text]:focus {
+      border-bottom: 1px solid rgb(158, 158, 158);
+      box-shadow: 0 1px 0 0 rgb(145, 145, 145);
+    }
+
+    .input-field input[type=text].valid {
+      border-bottom: 1px solid rgb(109, 109, 109);
+      box-shadow: 0 1px 0 0 rgb(104, 104, 104);
+    }
+
+
+    .categories {
+      ul {
+        background: transparent !important;
+  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        
+      }
+    }
+
+
+    .categ-cont {
+      height: 60vh;
+
+      margin: 3rem;
+    }
+
+    .search-result {
+
+    }
+  }
+
+  
+}
+      
+
+#modal {
+  height: 30vw;
+  width: 50vw;
+  border-radius: 10px;
+  border-top: 5px rgb(252, 184, 38) solid;
+  display: flex;
+  flex-direction: column;
+  // overflow: hidden;
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      color: rgb(94, 94, 94);
+      border-bottom: 1px rgb(177, 177, 177) solid;
+      padding-bottom: 1rem;
+      margin-bottom: 0;
+    }
+
+    .img-info {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    .img {
+      background-image: url('./images/drinks.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      // align-self: center;
+      min-height: 15vw;
+      min-width: 20vw;
+      margin: 1rem;
+      border-radius: 7px;
+    }
+  }
+}
+
+
+
+
+// STYEL OF TABS
+.tabs .tab a{
+  color:rgb(61, 61, 61);
+} /*Black color to the text*/
+
+.tabs .tab a:hover {
+  background-color:#eee;
+  color:rgb(179, 179, 179);
+} /*Text color on hover*/
+
+.tabs .tab a.active {
+  background-color:rgba(255, 186, 96, 0.185);
+  color:rgb(70, 70, 70);
+} /*Background and text color when a tab is active*/
+
+.tabs .indicator {
+  background-color:rgba(221, 121, 28, 0.432);
+} /*Color of underline*/
+
+.tabs .tab a:focus.active {
+  color:#424242;
+  /*Custom Text Color While Active*/
+  background-color:rgba(255, 186, 96, 0.308);
+  /*Custom Background Color While Active*/
+}
+
+
+// Slide animation
+
+.slideanim {
+  visibility:hidden;
+  // visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+
+.slideanim.slide {                  
+  visibility: visible;                  
+  animation: slide 1s;
+}
+
+.slideanim::after {
+  /* useful when its child elements are float:left; */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@keyframes slide {
+  0% {
+      opacity: 0;
+      transform: translateY(50%);
+  } 
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  } 
+}
