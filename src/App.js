@@ -6,7 +6,7 @@ import Highlights from './components/Highlights'
 import Search from './components/Search'
 import ModalDetails from './components/ModalDetails'
 
-import './style.scss'
+import './styles/style.scss'
 
 function App() {
 

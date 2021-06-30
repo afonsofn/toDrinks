@@ -6,7 +6,7 @@ function ModalDetails() {
       <div class="modal-content">
         <div className="img"></div>
         
-        <div className="img-info">
+        <div className="drink-info">
           <h4>Nome do drink</h4>
           <p>lorem askdnoajbfkjbadjl fboabfbapfibpiasbpi basdadpaibdpiabsipdbap sibdpiasbfi pbapisfbpiasbfipbasip bfsaibfipbaspibfipasb fia fhpia spifhpi ashfpi aspifhpiahsp ihapsi hpiashpiha iph paish piashpihppiash piahs</p>
         </div>
