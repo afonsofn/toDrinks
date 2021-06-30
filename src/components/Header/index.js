@@ -1,6 +1,10 @@
 import './style.scss'
+import { useDrinks } from '../../context/drinksContext'
 
 function Header() {
+
+  // const { test } = useDrinks()
+
   return (
     <div className="parallax-container">
       <div className="parallax"><img src="drinks.png" alt="Imagem_parallax" /></div>
