@@ -1,0 +1,37 @@
+#modal {
+  height: 30vw;
+  width: 50vw;
+  border-radius: 10px;
+  border-top: 5px rgb(252, 184, 38) solid;
+  display: flex;
+  flex-direction: column;
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      color: rgb(94, 94, 94);
+      border-bottom: 1px rgb(177, 177, 177) solid;
+      padding-bottom: 1rem;
+      margin-bottom: 0;
+    }
+
+    .img-info {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    .img {
+      background-image: url('../../images/drinks.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      min-height: 15vw;
+      min-width: 20vw;
+      margin: 1rem;
+      border-radius: 7px;
+    }
+  }
+}
